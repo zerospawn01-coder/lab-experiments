@@ -19,7 +19,7 @@ fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 # (A) Surprisal (Information) Comparison
 sns.boxplot(x='method', y='information', data=df, ax=axes[0], palette=['royalblue', 'orange'])
 axes[0].set_title("(A) Information Gain (Surprisal)", fontsize=14, fontweight='bold')
-axes[0].set_ylabel("Information $-\log(P)$", fontsize=12)
+axes[0].set_ylabel(r"Information $-\log(P)$", fontsize=12)
 axes[0].set_xlabel("Selection Method", fontsize=12)
 
 # (B) Probability (Grammar) Comparison
